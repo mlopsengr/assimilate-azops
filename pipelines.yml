@@ -12,7 +12,7 @@ jobs:
 
   steps:
 
-  - task: UserPythonVersion@0
+  - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.12'
     displayName: 'Setting Python Version'
