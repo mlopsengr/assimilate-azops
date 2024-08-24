@@ -20,6 +20,7 @@ jobs:
   - script: |
       pip install poetry
       poetry install 
+      poetry shell
     displayName: 'Install app dependencies'
       
 
@@ -29,7 +30,7 @@ jobs:
       azureSubscription: "mlops-connection"
       scriptType: 'bash'
       scriptLocaltion: 'inlineScript'
-      inlineScript: 'python assimiliate_azops/app.py'
+      inlineScript: 'python assimilate_azops/app.py'
       addSpntoEnvironment: true
     displayName: 'Run a one-line script'
   
