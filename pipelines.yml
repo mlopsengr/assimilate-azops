@@ -34,5 +34,5 @@ jobs:
       scriptLocation: 'inlineScript'
       inlineScript: 'poetry run python app.py'
       addSpnToEnvironment: true
-    displayName: 'Run a one-line script'
+    displayName: 'Run the app'
   
