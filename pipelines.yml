@@ -28,8 +28,8 @@ jobs:
     inputs: 
       azureSubscription: "mlops-connection"
       scriptType: 'bash'
-      scriptLocaltion: 'inlineScript'
+      scriptLocation: 'inlineScript'
       inlineScript: 'python app.py'
-      addSpntoEnvironment: true
+      addSpnToEnvironment: true
     displayName: 'Run a one-line script'
   
