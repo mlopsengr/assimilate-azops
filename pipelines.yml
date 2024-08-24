@@ -20,7 +20,6 @@ jobs:
   - script: |
       pip install poetry
       poetry install 
-      poetry shell
     displayName: 'Install app dependencies'
       
 
