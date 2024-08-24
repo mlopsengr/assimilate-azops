@@ -18,7 +18,7 @@ jobs:
     displayName: 'Setting Python Version'
 
   - script: |
-        pip install poetry
+        pip install poetry/
         poetry intall 
       displayName: 'Install app dependencies'
 
