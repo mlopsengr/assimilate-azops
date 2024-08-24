@@ -18,9 +18,10 @@ jobs:
     displayName: 'Setting Python Version'
 
   - script: |
-        pip install poetry
-      displayName: 'Install app dependencies'
-        poetry install 
+      pip install poetry
+      poetry install 
+    displayName: 'Install app dependencies'
+      
 
 
   - task: AzureCLI@2
