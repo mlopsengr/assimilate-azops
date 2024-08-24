@@ -21,6 +21,9 @@ jobs:
       pip install poetry
       poetry install 
     displayName: 'Install app dependencies'
+
+  - script: echo "##vso[task.prependpath]$HOME/.poetry/bin"
+    displayName: Add poetry to PATH
       
 
 
@@ -29,7 +32,7 @@ jobs:
       azureSubscription: "mlops-connection"
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
-      inlineScript: 'python app.py'
+      inlineScript: 'poetry run python app.py'
       addSpnToEnvironment: true
     displayName: 'Run a one-line script'
   
