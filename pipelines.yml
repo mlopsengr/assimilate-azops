@@ -21,4 +21,14 @@ jobs:
         pip install poetry
         poetry intall 
       displayName: 'Install app dependencies'
+
+
+  - task: AzureCLI@2
+    inputs: 
+      azureSubscription: "mlops-connection"
+      scriptType: 'bash'
+      scriptLocaltion: 'inlineScript'
+      inlineScript: 'python assimiliate_azops/app.py'
+      addSpntoEnvironment: true
+    displayName: 'Run a one-line script'
   
