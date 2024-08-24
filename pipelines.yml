@@ -19,8 +19,8 @@ jobs:
 
   - script: |
         pip install poetry
-        poetry install 
       displayName: 'Install app dependencies'
+        poetry install 
 
 
   - task: AzureCLI@2
